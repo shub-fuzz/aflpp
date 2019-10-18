@@ -3,7 +3,7 @@ From: registry.gitlab.com/rode0day/fuzzer-testing/aflpp_runner:16.04
 
 %labels
     MAINTAINER Josh Bundt
-    DockerTagID 1c774174d 
+    DockerTagID abd3abcc6 
 
 %environment
     AFL_SKIP_CPUFREQ=1
@@ -15,8 +15,7 @@ From: registry.gitlab.com/rode0day/fuzzer-testing/aflpp_runner:16.04
     exec /start_fuzzing "$@"
 
 %post
-    # In order to get locales working properly inside a Singularity container
-    # we need to do the following:
+    # In order to get locales working properly:
     export LANGUAGE=en_US.UTF-8 && \
     export LANG=en_US.UTF-8 && \
     export LC_ALL=en_US.UTF-8 && \
