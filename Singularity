@@ -20,8 +20,8 @@ From: registry.gitlab.com/rode0day/fuzzer-testing/aflpp_runner:16.04
     export LANGUAGE=en_US.UTF-8
     export LANG=en_US.UTF-8
     export LC_ALL=en_US.UTF-8
-    locale-gen en_US.UTF-8
-    dpkg-reconfigure locales
+    locale-gen --purge en_US.UTF-8
+    dpkg-reconfigure --frontend=noninteractive locales
 
     # fixing symlinks in Singularity 2.6
     cd /usr/local/bin
