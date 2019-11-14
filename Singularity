@@ -3,7 +3,7 @@ From: registry.gitlab.com/rode0day/fuzzer-testing/aflpp_runner:16.04
 
 %labels
     MAINTAINER Josh Bundt
-    DockerTagID 289589d8a
+    DockerTagID fab6aa87a
 
 %environment
     AFL_SKIP_CPUFREQ=1
@@ -29,3 +29,5 @@ From: registry.gitlab.com/rode0day/fuzzer-testing/aflpp_runner:16.04
     ln -sf afl-clang-fast afl-clang++
     ln -sf afl-clang-fast afl-clang-fast++
     ln -sf afl-gcc afl-g++
+
+    echo ==== DONE ====
