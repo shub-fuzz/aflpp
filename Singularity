@@ -3,7 +3,7 @@ From: registry.gitlab.com/rode0day/fuzzer-testing/aflpp_runner:16.04
 
 %labels
     MAINTAINER Josh Bundt
-    DockerTagID fe855fe7c
+    DockerTagID b18f16ad9
 
 %environment
     AFL_SKIP_CPUFREQ=1
@@ -13,6 +13,11 @@ From: registry.gitlab.com/rode0day/fuzzer-testing/aflpp_runner:16.04
     export AFL_SKIP_CPUFREQ LC_ALL LANG TMPDIR
 
 %runscript
+    echo /start_fuzzing $@
+    exec /start_fuzzing "$@"
+
+%startscript
+    echo /start_fuzzing $@
     exec /start_fuzzing "$@"
 
 %post
