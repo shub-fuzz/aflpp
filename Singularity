@@ -3,7 +3,7 @@ From: registry.gitlab.com/rode0day/fuzzer-testing/aflpp_runner:16.04
 
 %labels
     MAINTAINER Josh Bundt
-    DockerTagID 7e7f50e22
+    DockerTagID 54f3dd8c7
 
 %environment
     AFL_SKIP_CPUFREQ=1
