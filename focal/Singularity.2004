@@ -1,9 +1,9 @@
 Bootstrap: docker
-From: registry.gitlab.com/rode0day/fuzzer-testing/aflpp_runner:18.04 
+From: registry.gitlab.com/rode0day/fuzzer-testing/aflpp_runner:20.04
 
 %labels
     MAINTAINER Josh Bundt
-    DockerTagID 59c718f03
+    DockerTagID 70a6d3436
 
 %environment
     AFL_SKIP_CPUFREQ=1
