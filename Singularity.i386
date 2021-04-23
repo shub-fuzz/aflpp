@@ -1,9 +1,9 @@
 Bootstrap: docker
-From: registry.gitlab.com/rode0day/fuzzer-testing/aflpp_runner:16.04 
+From: registry.gitlab.com/rode0day/fuzzer-testing/i386/aflpp_runner:16.04
 
 %labels
     MAINTAINER Josh Bundt
-    DockerTagID 286c95ac3
+    DockerTagID 5d0386346
 
 %environment
     AFL_SKIP_CPUFREQ=1
@@ -21,7 +21,8 @@ From: registry.gitlab.com/rode0day/fuzzer-testing/aflpp_runner:16.04
     exec /start_fuzzing "$@"
 
 %post
-    # In order to get locales working properly:
+    # In order to get locales working properly inside a Singularity container
+    # we need to do the following:
     export LANGUAGE=en_US.UTF-8
     export LANG=en_US.UTF-8
     export LC_ALL=en_US.UTF-8
