@@ -2,7 +2,7 @@ Singularity image for AFL++ (https://github.com/AFLplusplus/AFLplusplus)
 
 [![singularity-deploy](https://github.com/shub-fuzz/aflpp/actions/workflows/builder.yml/badge.svg?branch=main)](https://github.com/shub-fuzz/aflpp/actions/workflows/builder.yml)
 
-- __What__ is [Singularity](https://sylabs.io/singularity/)??  
+- __What__ is [Singularity](https://sylabs.io/singularity/)?  
   A containerization system primarily used by the scientific community on high-performance computing (HPC).
   On many University HPC systems, docker is not allowed, but singularity is availble because it runs with 
   user level permisions.  
